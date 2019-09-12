@@ -2,7 +2,7 @@
 Todovel, a simple todolist app written with Laravel. An application written just to learn Laravel.
 
 # Setup
-First, we clone the repo and we rename the **.env.example** file to **.env.example**.
+First, we clone the repo and we rename the **.env.example** file to **.env**.
 
 ```bash
 ~$ git clone https://github.com/emregeldegul/todovel.git && cd todovel
