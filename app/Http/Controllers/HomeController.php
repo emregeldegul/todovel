@@ -29,7 +29,7 @@ class HomeController extends Controller
             ->where('author', Auth::user()->id)
             ->where('pin', 1)
             ->where('status', 1)
-            ->get();
+            ->paginate(10);
         return view('home')->with('tasks', $tasks);
     }
 }

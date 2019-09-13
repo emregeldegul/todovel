@@ -55,6 +55,7 @@
                                 @endforeach
                             </tbody>
                         </table>
+                        {{ $tasks->links() }}
                     @else
                         <table class="table">
                             <thead>

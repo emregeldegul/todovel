@@ -19,7 +19,7 @@ class TaskController extends Controller
         $tasks = Task::orderBy('status', 'DESC')
             ->orderBy('updated_at', 'DESC')
             ->where('author', Auth::user()->id)
-            ->get();
+            ->paginate(10);
 
         return View('tasks.index')->with('tasks', $tasks);
     }
