@@ -68,7 +68,7 @@ class TaskController extends Controller
 
     public function update(Request $request, Task $task)
     {
-        if (Auth::user()->id != $task->id) {
+        if (Auth::user()->id != $task->author) {
             abort(403);
         }
 
